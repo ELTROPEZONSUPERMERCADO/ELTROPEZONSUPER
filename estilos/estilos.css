@@ -172,7 +172,7 @@ footer
                
                 /* tamaño web*/
 
-                @media screen and (min-width: 1100 px)
+                @media screen and (min-width: 1100px)
                 {   .gridindex {
                     background-color:rgb(9, 10, 10);
                     display: grid;
@@ -187,7 +187,7 @@ footer
                     "nav  "
                     "footer   "
                 }
-                @media screen and (max-width: 1100 px)
+                @media screen and (max-width: 1100px)
                 {   .gridindex {
                     background-color:rgb(9, 10, 10);
                     display: grid;
@@ -223,7 +223,7 @@ footer
 
                 /* tamaño pequeñas pamntallas */
 
-                @media screen and (max-width: 480 px){
+                @media screen and (max-width: 480px){
 
                     .gridindex {
                         background-color:rgb(235, 171, 171);

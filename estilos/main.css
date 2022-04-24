@@ -1,0 +1,21 @@
+h1 {
+  color: red; }
+
+.header {
+  background-color: aquamarine; }
+
+h2 {
+  font-size: 30px; }
+
+.gridindex {
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 10px; }
+
+.seccionmedio {
+  align-items: center;
+  padding-right: 15px;
+  color: bisque; }
+  .seccionmedio:hover {
+    color: brown;
+    font-size: 25px; }

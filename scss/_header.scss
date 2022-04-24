@@ -1,2 +1,32 @@
 $colorPrincipal: rgb(199, 203, 158);
-$colorSecundario:rgb(190, 30, 30);
+$colorSecundario: rgb(190, 30, 30);
+
+$anchoTotal: 100px;
+
+.imagenvariedad{
+    width: $anchoTotal/2;
+}
+
+$vista:mobile;
+body{
+    @if $vista==desktop{
+        @media only screen and (min-width:1024px){
+            h1{font-size: $h1Desktop;}
+            h3{font-size: 35px;}
+            p{font-size: $parrafoDesktop;}
+        }
+        @else if $vista==mobile{
+            @media only screen and (min-width:767px){
+                h1{font-size: $h1Mobile;}
+                h3{font-size: 25px;}
+                p{font-size: $parrafoMobile;}
+            }
+
+    }
+    @else {
+        h1{font-size: 34px;}
+                h3{font-size: 25px;}
+                p{font-size:20px;}
+
+    }
+}

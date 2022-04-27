@@ -1,0 +1,25 @@
+{
+  "name": "eltropezon.cas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss estilos/main.css",
+    "watch-css": "nodemon -e scss -x \" npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ELTROPEZONSUPERMERCADO/ELTROPEZONSUPER.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ELTROPEZONSUPERMERCADO/ELTROPEZONSUPER/issues"
+  },
+  "homepage": "https://github.com/ELTROPEZONSUPERMERCADO/ELTROPEZONSUPER#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

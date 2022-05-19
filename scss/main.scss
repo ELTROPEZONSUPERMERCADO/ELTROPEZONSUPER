@@ -38,7 +38,7 @@ a:active {
 
 /*barra inicio*/
 
-.header {
+header {
 
 
     z-index: 1000;
@@ -313,6 +313,12 @@ footer {
         margin: 0;
         flex-direction: column;
     }
+    .navbar-brand,
+    .fotochanguito{
+        width: auto;
+        height: auto;
+    }
+    
   }
 
 /*tamaño 768*/
@@ -370,6 +376,12 @@ footer {
     .fotoqr {
         width: 280px;
         height: 140px;
+    }
+
+    .navbar-brand,
+    .fotochanguito{
+        width: auto;
+        height: auto;
     }
     
 }

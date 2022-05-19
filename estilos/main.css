@@ -38,7 +38,7 @@ a:active {
   color: darkgoldenrod; }
 
 /*barra inicio*/
-.header {
+header {
   z-index: 1000;
   background-color: black;
   position: relative;
@@ -234,7 +234,11 @@ footer {
   .img {
     justify-content: center;
     margin: 0;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .navbar-brand,
+  .fotochanguito {
+    width: auto;
+    height: auto; } }
 
 /*tamaño 768*/
 @media screen and (max-width: 768px) {
@@ -272,4 +276,8 @@ footer {
     height: 250px; }
   .fotoqr {
     width: 280px;
-    height: 140px; } }
+    height: 140px; }
+  .navbar-brand,
+  .fotochanguito {
+    width: auto;
+    height: auto; } }

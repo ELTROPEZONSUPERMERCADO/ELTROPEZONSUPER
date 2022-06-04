@@ -10,13 +10,7 @@ if (entradaNombre == "") {
 
 
 for (let i = 0; i < 1; ++i) {
-    if (entradaEdad <= 1 && entradaEdad > 25) {
-        alert("usted es joven ");
-    } else if (entradaEdad <= 26 > 40 && entradaEdad > 40) {
-        alert("le quedan pocos años de juventud ");
-    } else if (entradaEdad <= 41 > 65 && entradaEdad > 65) {
-        alert("aproveche antes de jubilarse ");
-    } else if (entradaEdad <= 66) {
-        alert("aproveche los descuentos de  jubilados ");
+    if (entradaEdad <= 66) {
+        alert("aproveche los descuentos  ");
     }
 }

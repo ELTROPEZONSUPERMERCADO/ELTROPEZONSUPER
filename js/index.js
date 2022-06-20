@@ -1,6 +1,6 @@
 //funcion entrega de arrys y  objeto
 const nombreCliente = [];
-let cantidad = 10;
+let cantidad = 1;
 do {
     let entrada = prompt("Ingresar nombre completo");
     nombreCliente.push(entrada.toUpperCase());

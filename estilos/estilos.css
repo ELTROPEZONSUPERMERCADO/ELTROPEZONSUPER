@@ -5,8 +5,6 @@
     gap: 1rem;
     justify-content: flex-end;
     color: azure;
-
-
 }
 
 h2 {
@@ -41,13 +39,10 @@ footer {
     justify-content: center;
 }
 
-
 .titulo1 {
     text-align: center;
-
     color: indianred;
     font-style: italic;
-
 }
 
 .footercolor {
@@ -91,9 +86,6 @@ footer {
     height: 800px;
     align-items: center;
     align-content: center;
-
-
-
 }
 
 .gridindex {
@@ -104,41 +96,26 @@ footer {
     justify-items: stretch;
     justify-content: stretch;
     align-items: stretch;
-    grid-template-areas:
-        "header header"
-        "nav  nav"
-        "footer footer "
-
-
-
+    grid-template-areas: "header header" "nav  nav" "footer footer "
 }
 
 .contenedor-menu {
     grid-area: header;
-
 }
 
 .titulo1 {
     grid-area: auto;
     justify-self: center;
-
-
 }
-
-
 
 .footercolor {
     grid-area: footer;
-
 }
-
-
 
 
 /* tamaño  celular */
 
 @media screen and (max-width:768px) {
-
     .gridindex {
         background-color: rgb(171, 235, 182);
         display: grid;
@@ -147,33 +124,25 @@ footer {
         justify-items: center;
         justify-content: center;
         align-items: center;
-        grid-template-areas:
-            "header "
-            "nav  "
-            "footer  "
+        grid-template-areas: "header " "nav  " "footer  "
     }
-
     .titulo1 {
         text-align: center;
-
         color: rgb(113, 92, 205);
         font-style: italic;
     }
-
     .footercolor {
         background-color: rgb(163, 95, 7);
         display: flex;
         justify-content: space-around;
     }
-
     .contenedor-menu {
         background-color: rgb(163, 95, 7);
         display: flex;
         justify-content: space-around;
     }
-
-
 }
+
 
 /* tamaño web*/
 
@@ -187,12 +156,8 @@ footer {
         justify-content: center;
         align-items: center;
         align-content: center;
-        grid-template-areas:
-            "header  "
-            "nav  "
-            "footer   "
+        grid-template-areas: "header  " "nav  " "footer   "
     }
-
     @media screen and (max-width: 1100px) {
         .gridindex {
             background-color: rgb(9, 10, 10);
@@ -202,37 +167,26 @@ footer {
             justify-items: left;
             justify-content: left;
             align-items: left;
-            grid-template-areas:
-                "header header "
-                "nav  nav"
-                "footer footer  "
+            grid-template-areas: "header header " "nav  nav" "footer footer  "
         }
-
         .titulo1 {
             text-align: center;
-
             color: rgb(165, 154, 212);
             font-style: italic;
         }
-
         .footercolor {
             background-color: rgb(10, 6, 2);
             display: flex;
             justify-content: space-around;
         }
-
         .contenedor-menu {
             background-color: rgb(8, 8, 8);
             display: flex;
             justify-content: space-around;
         }
-
     }
-
     /* tamaño pequeñas pamntallas */
-
     @media screen and (max-width: 480px) {
-
         .gridindex {
             background-color: rgb(235, 171, 171);
             display: grid;
@@ -241,50 +195,39 @@ footer {
             justify-items: center;
             justify-content: center;
             align-items: center;
-            grid-template-areas:
-                "header nav "
-                " header nav"
-                "footer footer  "
+            grid-template-areas: "header nav " " header nav" "footer footer  "
         }
-
         .titulo1 {
             text-align: center;
-
             color: rgb(154, 212, 176);
             font-style: initial;
         }
-
         .footercolor {
             background-color: rgb(10, 6, 2);
             display: flex;
             justify-content: center;
         }
-
         .contenedor-menu {
             background-color: rgb(8, 8, 8);
             display: flex;
             justify-content: center;
         }
-
     }
-
     /* a:*/
     a:hover {
         font-weight: bold;
         background-color: red;
         color: rgb(127, 20, 220);
     }
-
     a:link {
         text-decoration: none;
         color: chartreuse;
     }
-
     a:visited {
         color: aqua;
     }
-
     a:active {
         background-color: darkmagenta;
         color: darkgoldenrod;
-    }  }
+    }
+}

@@ -38,3 +38,15 @@ console.log(nombreCliente.includes(`Claudia Lopez`))
 console.log(nombreCliente.includes(`Ramiro Funessi`))
 console.log(nombreCliente.includes(`Pedro Lozano`))
 console.log(nombreCliente.includes(`Dante Alianza`))
+
+//para formulario 
+
+let userName = document.getElementById("nombreFormulario").value;
+let userNumber = document.getElementById("numeroFormulario").value;
+let userEmail = document.getElementById("emailformulario").value;
+let userMessage = document.getElementById("mensajeFormulario").value;
+
+console.log(userName);
+console.log(userNumber);
+console.log(userEmail);
+console.log(userMessage);

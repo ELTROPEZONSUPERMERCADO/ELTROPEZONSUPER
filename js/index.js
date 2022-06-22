@@ -41,12 +41,18 @@ console.log(nombreCliente.includes(`Dante Alianza`))
 
 //para formulario 
 
-let userName = document.getElementById("nombreFormulario").value;
-let userNumber = document.getElementById("numeroFormulario").value;
-let userEmail = document.getElementById("emailformulario").value;
-let userMessage = document.getElementById("mensajeFormulario").value;
+const addNewClient = () => {
+    let listaClient = document.getElementById("Client")
+    let userName = document.getElementById("nombreFormulario").value;
+    let userNumber = document.getElementById("numeroFormulario").value;
+    let userEmail = document.getElementById("emailformulario").value;
+    let userMessage = document.getElementById("mensajeFormulario").value;
 
-console.log(userName);
-console.log(userNumber);
-console.log(userEmail);
-console.log(userMessage);
+
+    let nuevoCliente = document.createElement("li");
+    nuevoCliente.innerHTML = < h2 > $ { userName } - $ { userEmail } < /h2>;
+
+
+    listaClient.append(nuevoCliente);
+
+}

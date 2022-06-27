@@ -39,6 +39,18 @@ console.log(nombreCliente.includes(`Ramiro Funessi`))
 console.log(nombreCliente.includes(`Pedro Lozano`))
 console.log(nombreCliente.includes(`Dante Alianza`))
 
+
+// para eventos
+
+let tipoEvento = document.getElementById("tipoEvento");
+let userSeleccion = document.getElementById("userSeleccion");
+let result = document.getElementById("result");
+
+
+tipoEvento.onchange() => {
+    result.innerText = tipoEvento.value
+}
+
 //para formulario 
 
 const addNewClient = () => {

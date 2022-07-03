@@ -51,7 +51,32 @@ tipoEvento.onchange() => {
     result.innerText = tipoEvento.value
 }
 
-//para formulario 
+
+// json
+
+
+
+localStorage.setItem("listaArticulos", JSON.stringify(Articulos));
+class Articulo {}
+constructor(obj) {
+    this.nombre = obj.Articulo.toUpperCase();
+    this.precio = parseFloat(obj.precio);
+
+}
+
+restaDescuento() {
+    this.precio = this.precio * 0.95;
+}
+
+const almacenados = json.parse(localStorage.getItem("listaArticulos"));
+const newArticulos = [];
+for (const objeto of almacenados)
+    articulos.push(new Articulo(objeto));
+for (const articulo of articulos)
+    producto.restaDescuento();
+console.log(newArticulos)
+    //para formulario 
+
 
 const addNewClient = () => {
     let listaClient = document.getElementById("Client")
@@ -66,5 +91,4 @@ const addNewClient = () => {
 
 
     listaClient.append(nuevoCliente);
-
 }

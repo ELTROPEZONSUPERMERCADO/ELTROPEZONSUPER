@@ -75,7 +75,35 @@ for (const objeto of almacenados)
 for (const articulo of articulos)
     producto.restaDescuento();
 console.log(newArticulos)
-    //para formulario 
+
+// libreria
+let click_1 = document.getElementById("click_1");
+let click_2 = document.getElementById("click_2");
+let result = document.getElementById("result");
+
+click_1.onclick = () => {
+    Toastify({
+        text: "Aqui vamos",
+        duration: 4000,
+        gravity: `top`,
+        position: "absolute",
+        className: `notification my-toast`,
+
+    }).showToast();
+}
+
+click_2.onclick = () => {
+    Toastify({
+        text: "Aqui vamos",
+        duration: 5000,
+        gravity: `top`,
+        position: "absolute",
+        className: `notification my-toast`,
+
+    }).showToast();
+}
+
+//para formulario 
 
 
 const addNewClient = () => {

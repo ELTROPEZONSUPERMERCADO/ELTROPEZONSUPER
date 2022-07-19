@@ -93,15 +93,28 @@ click_1.onclick = () => {
 }
 
 click_2.onclick = () => {
-    Toastify({
-        text: "Aqui vamos",
-        duration: 5000,
-        gravity: `top`,
-        position: "absolute",
-        className: `notification my-toast`,
+        Toastify({
+            text: "Aqui vamos",
+            duration: 5000,
+            gravity: `top`,
+            position: "absolute",
+            className: `notification my-toast`,
 
-    }).showToast();
-}
+        }).showToast();
+    }
+    //para fetch
+fetch()
+    .then((response) => console.log(response.json()))
+    .then((json) => console.log(json))
+    .then(data => {
+        data.forEach(post => {
+            const li = document.createElement("li");
+            li.textContent = post.title;
+            listado.appendChild(li);
+        })
+    })
+
+
 
 //para formulario 
 

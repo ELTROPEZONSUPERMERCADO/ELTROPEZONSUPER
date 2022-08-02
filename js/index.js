@@ -1,20 +1,22 @@
 //funcion entrega de arrys y  objeto
 const nombreCliente = [];
-let cantidad = 1;
-do {
-    let entrada = prompt("Ingresar nombre completo");
-    nombreCliente.push(entrada.toUpperCase());
-    console.log(nombreCliente.length);
+for (let i = 1; i <= 20; i++) {
+    let cantidad = 1;
+    do {
+        let entrada = prompt("Ingresar nombre completo");
+        nombreCliente.push(entrada.toUpperCase());
+        console.log(nombreCliente.length);
 
-} while (nombreCliente.length != cantidad)
+    } while (nombreCliente.length != cantidad)
 
-function Clientes(numeroDeCliente, nombre, formaDePago, tipoDeFactura, domicilio) {
-    this.numeroDeCliente = numeroDeCliente;
-    this.nombreCliente = nombre.toUpperCase();
-    this.formaDePago = formaDePago;
-    this.tipoDeFactura = tipoDeFactura;
-    this.domicilio = domicilio;
-    this.clienteInfo = muestraCliente;
+    function Clientes(numeroDeCliente, nombre, formaDePago, tipoDeFactura, domicilio) {
+        this.numeroDeCliente = numeroDeCliente;
+        this.nombreCliente = nombre.toUpperCase();
+        this.formaDePago = formaDePago;
+        this.tipoDeFactura = tipoDeFactura;
+        this.domicilio = domicilio;
+        this.clienteInfo = muestraCliente;
+    }
 }
 
 const cliente1 = new Clientes("000001", "Claudia Lopez", "efectivo o tarjeta", " factura A ", "Olazabal 4950 1A");
@@ -44,11 +46,11 @@ console.log(nombreCliente.includes(`Dante Alianza`))
 
 let tipoEvento = document.getElementById("tipoEvento");
 let userSeleccion = document.getElementById("userSeleccion");
-let result = document.getElementById("result");
+let result1 = document.getElementById("result");
 
 
 tipoEvento.onchange() => {
-    result.innerText = tipoEvento.value
+    result1.innerText = tipoEvento.value
 }
 
 
